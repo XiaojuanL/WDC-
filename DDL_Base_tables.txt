@@ -37,13 +37,13 @@ CREATE TABLE base_enrollment_demographic_detail (
     Is_homeless VARCHAR(50),
     Is_runaway VARCHAR(50),
     Have_limited_proficiency_in_english VARCHAR(50),
-    Is_unemployed_over_6_month VARCHAR(50),
-    race VARCHAR(50),
+    Is_unemployed_over_6_month VARCHAR(255),
+    race VARCHAR(255),
     Highest_education_level VARCHAR(255),
     Is_offender VARCHAR(50),
     Is_low_income VARCHAR(50),
     Is_single_parent VARCHAR(50),
-    Is_eligibal_Veteran VARCHAR(50)
+    Is_eligible_Veteran VARCHAR(50)
 );
 
 
@@ -54,7 +54,7 @@ CREATE TABLE base_enrollment_case_management_detail (
     is_opted_out VARCHAR(50),
     program_name VARCHAR(255),
     contract_name VARCHAR(255),
-    program_enrollment_tp_last_updated_by VARCHAR(50),
+    program_enrollment_tp_last_updated_by VARCHAR(150),
     enrollment_start_date DATE,
     enrollment_end_date DATE,
     last_completed_service_cur_pro VARCHAR(255),
